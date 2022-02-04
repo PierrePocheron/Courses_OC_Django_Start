@@ -1,0 +1,12 @@
+* {
+    background: rgb(235, 198, 198);
+}
+
+h1 {
+    background-color: rgb(170, 170, 248);
+}
+
+.errorlist {
+    margin-bottom: -10px;
+    background-color: rgb(255, 124, 124);
+}

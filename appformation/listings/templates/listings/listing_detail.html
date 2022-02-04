@@ -1,0 +1,21 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+
+<h2>{{ listing.title }}</h2>
+
+<ul>
+  <li>Description : {{ listing.description }}</li>
+  <li>(1) Vendu : {{ listing.sold }}</li>
+  <li>(2) Vendu : {{ listing.sold|yesno }}</li>
+  <li>Année : {{ listing.year }}</li>
+  <li>Type : {{ listing.type }}</li>
+  <li>Marque : {{ listing.band }}</li>
+</ul>
+
+<a href="{% url 'listing-update' listing.id %}">Modifier ce groupe</a>
+<a href="{% url 'listing-list' %}">Retourner à la liste des groupes</a>
+
+
+
+{% endblock %}
